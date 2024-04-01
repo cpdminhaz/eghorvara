@@ -22,7 +22,9 @@
     <!-- Header Start -->
     <header class="h-[16vh] flex md:flex lg:flex justify-between">
       <div class="flex justify-between items-center">
-        <div class="h-full ml-3 w-36 lg:w-36 p-2 flex justify-center items-center">
+        <div
+          class="h-ful pl-6 w-36 lg:w-36 p-2 flex justify-center items-center"
+        >
           <img
             src="assets/433969648_1831421687284492_49446-removebg-preview.png"
             alt=""
@@ -46,41 +48,43 @@
         <img class="h-10" src="assets/user.png" alt="" />
 
         <div class="dropdown lg:hidden" style="direction: rtl">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <details class="dropdown">
+            <summary class="m-1 btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </summary>
+            <ul
+              class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h7"
-              />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li><a class="text-xl">All</a></li>
-            <li><a class="text-xl">Flat</a></li>
-            <li><a class="text-xl">Hostel</a></li>
-            <li><a class="text-xl">About</a></li>
-            <li><a class="text-xl">Contact</a></li>
-          </ul>
+              <li><a class="text-xl md:hidden">All</a></li>
+              <li><a class="text-xl md:hidden">Flat</a></li>
+              <li><a class="text-xl md:hidden">Hostel</a></li>
+              <li><a class="text-xl">About</a></li>
+              <li><a class="text-xl">Contact</a></li>
+            </ul>
+          </details>
         </div>
       </div>
     </header>
     <!-- Header End -->
 
     <!-- Hero Start -->
-    <div class="hero min-h-[75vh] bg-gradient-to-r from-neutral-50 to-orange-50"
-      >
-      <div class="hero-content flex-col lg:flex-row">
+    <div
+      class="hero min-h-[75vh] bg-gradient-to-r from-neutral-50 to-orange-50"
+    >
+      <div class="hero-content mt-[5vh] md:mt-0 lg:mt-0 flex-col lg:flex-row-reverse">
         <img
           src="assets/Navyom-Living-dining.jpg"
           class="max-w-auto md:max-w-2xl lg:max-w-3xl rounded-lg shadow-2xl"
@@ -88,10 +92,165 @@
         <div>
           <h1 class="text-5xl font-bold">Find Your Next Destination With Us</h1>
           <p class="py-6 text-xl">
-            Find best flats and hostels near you. Search on map,
-            search by keyword and search with real photos, all are availabe here.
+            Find best flats and hostels near you. Search on map, search by
+            keyword and search with real photos, all are availabe here.
           </p>
-          <button class="btn btn-primary bg-blue-600 text-2xl text-slate-50">Get Started</button>
+            <!-- Dropdown Start -->
+          <details class="dropdown mt-[5vh] md:mt-0 lg:mt-0 dropdown-top md:dropdown-right lg:dropdown-right">
+            <summary class="btn btn-primary bg-blue-600 text-2xl text-slate-50">
+              Get Started
+            </summary>
+            <ul
+              class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-60"
+            >
+            <!-- Rajshahi Division -->
+              <li>
+                <details class="dropdown lg:dropdown-top">
+                  <summary class="m-1 btn text-l md:text-xl lg:text-2xl">Rajshahi</summary>
+                  <ul
+                    class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                  >
+                    <li><a>Sirajganj</a></li>
+                    <li><a>Rajshahi</a></li>
+                    <li><a>Bogura</a></li>
+                    <li><a>Pabna</a></li>
+                    <li><a>Natore</a></li>
+                    <li><a>Naogaon</a></li>
+                    <li><a>Joypurhat</a></li>
+                    <li><a>Chapai Nawabganj</a></li>
+                  </ul>
+                </details>
+              </li>
+              <!-- Rangpur Division -->
+              <li>
+                <details class="dropdown lg:dropdown-top">
+                  <summary class="m-1 btn text-l md:text-xl lg:text-2xl">Rangpur</summary>
+                  <ul
+                    class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                  >
+                  <li><a>Rangpur</a></li>
+                  <li><a>Dinajpur</a></li>
+                  <li><a>Gaibandha</a></li>
+                  <li><a>Kurigram</a></li>
+                  <li><a>Lalmonirhat</a></li>
+                  <li><a>Nilphamari</a></li>
+                  <li><a>Panchagarh</a></li>
+                  <li><a>Thakurgaon</a></li>
+                  </ul>
+                </details>
+              </li>
+              <!-- Dhaka Division -->
+              <li>
+                <details class="dropdown lg:dropdown-top">
+                  <summary class="m-1 btn text-l md:text-xl lg:text-2xl">Dhaka</summary>
+                  <ul
+                    class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                  >
+                  <li><a>Dhaka</a></li>
+                  <li><a>Faridpur</a></li>
+                  <li><a>Gazipur</a></li>
+                  <li><a>Gopalganj</a></li>
+                  <li><a>Tangail</a></li>
+                  <li><a>Kishoreganj</a></li>
+                  <li><a>Madaripur</a></li>
+                  <li><a>Manikganj</a></li>
+                  <li><a>Munshiganj</a></li>
+                  <li><a>Narayanganj</a></li>
+                  <li><a>Narsingdi</a></li>
+                  <li><a>Rajbari</a></li>
+                  <li><a>Shariatpur</a></li>
+                  </ul>
+                </details>
+              </li>
+              <!-- Chattogram Division -->
+              <li>
+                <details class="dropdown lg:dropdown-top">
+                  <summary class="m-1 btn text-l md:text-xl lg:text-2xl">Chattogram</summary>
+                  <ul
+                    class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                  >
+                  <li><a>Chattogram</a></li>
+                  <li><a>Bandarban</a></li>
+                  <li><a>Brahmanbaria</a></li>
+                  <li><a>Chandpur</a></li>
+                  <li><a>Cox's Bazar</a></li>
+                  <li><a>Cumilla</a></li>
+                  <li><a>Feni</a></li>
+                  <li><a>Khagrachari</a></li>
+                  <li><a>Lakshmipur</a></li>
+                  <li><a>Noakhali</a></li>
+                  <li><a>Rangamati</a></li>
+                  </ul>
+                </details>
+              </li>
+              <!-- Khulna Division -->
+              <li>
+                <details class="dropdown lg:dropdown-top">
+                  <summary class="m-1 btn text-l md:text-xl lg:text-2xl">Khulna</summary>
+                  <ul
+                    class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                  >
+                  <li><a>Khulna</a></li>
+                  <li><a>Bagerhat</a></li>
+                  <li><a>Chuadanga</a></li>
+                  <li><a>Jashore</a></li>
+                  <li><a>Jhenaidah</a></li>
+                  <li><a>Kushtia</a></li>
+                  <li><a>Magura</a></li>
+                  <li><a>Meherpur</a></li>
+                  <li><a>Narail</a></li>
+                  <li><a>Satkhira</a></li>
+                  </ul>
+                </details>
+              </li>
+              <!-- Barisal Division -->
+              <li>
+                <details class="dropdown lg:dropdown-top">
+                  <summary class="m-1 btn text-l md:text-xl lg:text-2xl">Barishal</summary>
+                  <ul
+                    class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                  >
+                    <li><a>Barishal</a></li>
+                    <li><a>Barguna</a></li>
+                    <li><a>Bhola</a></li>
+                    <li><a>Jhalokati</a></li>
+                    <li><a>Patuakhali</a></li>
+                    <li><a>Pirojpur</a></li>
+                  </ul>
+                </details>
+              </li>
+              <!-- Mymensingh Division -->
+              <li>
+                <details class="dropdown lg:dropdown-top">
+                  <summary class="m-1 btn text-l md:text-xl lg:text-2xl">Mymensingh</summary>
+                  <ul
+                    class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                  >
+                    <li><a>Mymensingh</a></li>
+                    <li><a>Jamalpur</a></li>
+                    <li><a>Netrokona</a></li>
+                    <li><a>Sherpur</a></li>
+                  </ul>
+                </details>
+              </li>
+              <!-- Sylhet Division -->
+              <li>
+                <details class="dropdown lg:dropdown-top">
+                  <summary class="m-1 btn text-l md:text-xl lg:text-2xl">Sylhet</summary>
+                  <ul
+                    class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                  >
+                    <li><a>Sylhet</a></li>
+                    <li><a>Moulvibazar</a></li>
+                    <li><a>Habiganj</a></li>
+                    <li><a>Sunamganj</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+          <!-- Dropdown End -->
+
         </div>
       </div>
     </div>
